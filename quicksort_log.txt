@@ -1,0 +1,3 @@
+Partitioniere ['banana', 'apple', 'grape', 'date', 'cherry'], Pivot: cherry
+Sortiere ['banana', 'apple'] direkt
+Sortiere ['date', 'grape'] direkt

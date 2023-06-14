@@ -9,9 +9,9 @@ def quicksort(arr, left, right):
 
 # gibt das pivot element nach jedem schritt zurück
 def part(arr, left, right):
-    i = left    # linker part des zu sortierenden arrays
-    j = right-1    # rechter part des zu sortierenden arrays
-    pivot = arr[right]    # pivot element
+    i = left  # linker part des zu sortierenden arrays
+    j = right  # rechter part des zu sortierenden arrays
+    pivot = arr[2]  # pivot element (3 Element)
 
     # solange i und j sich nicht kreuzen
     while i < j:
@@ -34,6 +34,11 @@ def part(arr, left, right):
 
 
 arrayToSort = ["Dattel", "Ananas", "Kirsche", "Banane", "Kiwi"]
-print(arrayToSort)
+print("Test1:", arrayToSort)
 quicksort(arrayToSort, 0, len(arrayToSort) - 1)
-print(arrayToSort)
+print("Test1 Sortiert:", arrayToSort)
+print()
+arrayToSort2 = ["Ananas", "Dattel", "Kirsche", "Banane", "Kiwi", "Avocado"]
+print("Test2:", arrayToSort2)
+quicksort(arrayToSort2, 0, len(arrayToSort2) - 1)
+print("Test2 Sortiert:", arrayToSort2)
